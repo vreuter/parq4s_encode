@@ -1,7 +1,12 @@
 object ParquetTools {
   import org.apache.parquet.schema.{LogicalTypeAnnotation, PrimitiveType} // dependency solved by parquet4s
-  import com.github.mjakubowski84.parquet4s.{RequiredValueEncoder, Value, ValueCodecConfiguration}
-  import com.github.mjakubowski84.parquet4s.{LogicalTypes, SchemaDef}
+  import com.github.mjakubowski84.parquet4s.{
+    LogicalTypes,
+    RequiredValueEncoder,
+    SchemaDef,
+    Value,
+    ValueCodecConfiguration
+  }
 
   /**
    * Create a Parquet encoder for a value that's required in a schema.
